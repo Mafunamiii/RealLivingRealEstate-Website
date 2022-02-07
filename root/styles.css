@@ -1,0 +1,347 @@
+
+/* Table of Contents:
+    I.   Body
+    II.  Navigation Bar
+    III. Body Classes
+    IV.  Typography
+    V.   Hyperlinks
+    VI.  Footer
+*/
+
+/* ===================================================================  */
+
+
+
+/*== I. Body ==============================================*/
+
+body {
+    margin: 0px;
+    background-image: url('Resources/bodyBG.png') ;
+    font-family: "outfit", sans-serif;
+    color: rgb(247, 199, 167);
+}
+
+.body-elements {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+/*== II. Navigation Bar ====================================*/
+
+.nav-block {
+    background-color: #261949;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.nav-block > .nav-wrap > .nav-link-wrap a{
+    color: rgb(247, 199, 167);
+}
+
+.nav-wrap > .Left-side, .Right-side > .nav-link-wrap{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;   
+}
+
+.nav-link-wrap {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrap a{
+    color: #8a8989;
+    text-decoration: none;
+    transition: color\ 0.5s;
+}
+
+.nav-link-wrap:hover {
+    border-bottom: 1px solid rgb(255, 183, 136);
+    transition: color\ 0.5s;
+}
+
+.nav-link-wrap a:hover {
+    transition: 0.5s;
+    color: rgb(248, 164, 112);
+    
+}
+
+.active-nav {
+    border-bottom: 1px solid black;
+}
+
+.active-nav a {
+    color: rgb(248, 164, 112) !important;
+}
+
+.Left-side, .Right-side {
+    display: flex;
+}
+
+.Right-side {
+    padding: 10px
+}
+
+.logo-image img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.Left-side > h4 {
+    margin:0%;
+    padding: 10px;
+}
+
+
+#searchbar {
+    background-color: rgb(250, 223, 206);
+
+    margin: 0px;
+    border-radius: 25px;
+    padding: 0px 5px;
+}
+
+
+/*== III. Body Classes ======================================*/
+
+.content-column-wrap {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 20px 0px 20px 0px;
+   
+}
+
+.content-wrap, .inquiryHeader {
+    background-color: #424242;
+
+    padding: 10px 50px 30px 50px;
+    margin: 0px 20px 20px 20px;
+    height: max-content ;
+}
+
+.content-wrap-footer {
+    background-color: #261949;
+
+}
+
+.content-wrap-banner{
+    background-color: #424242;
+    margin-bottom: 20px;
+    height: max-content ;
+}
+
+.home-page-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px 0px;
+}
+
+.content-column-wrap img:hover{
+    background-color: #000;
+    opacity:0.75;
+    transition: 0.5s;
+}
+
+.content-wrap img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px 0px;
+}
+
+.container-wrap img{
+    height: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto 30px auto;
+}
+
+#imgMap {
+    padding: 0px 50px 50px 50px;
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 389px;
+}
+
+#contactlogo, #inquirylogo {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 10%;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.main-body-contents {
+    background-color:rgb(36, 36, 71);
+    margin: 110px 50px 50px 50px;
+}
+
+.textbox {
+    margin: auto;
+    width: 80%;
+    text-align: left;
+    color: rgb(247, 199, 167);
+}
+
+
+.content-wrap section p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.container-wrap iframe{
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding:25px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: rgb(250, 223, 206);
+    padding: 10px;
+    border-radius: 15%;
+}
+
+#mainfieldset {
+    margin: 20px 50px 100px 20px;
+    width: 65%;
+    padding-right: 20px;
+    border: 1px solid rgb(250, 223, 206);
+}
+
+fieldset {
+    border: 1px solid rgb(250, 223, 206);
+}
+
+textarea {
+    margin: 10px 10px 10px 0px;
+}
+
+
+
+
+
+/*== IV. Typography ======================================== */
+
+#header h1{
+    text-align: center;
+}
+
+#inquiryheader {
+   font-size: 45px;
+   padding-left: 20px;
+}
+
+#rcorner {
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#parFormat {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+#parPad {
+    padding: 30px;
+}
+
+#pcenter {
+    text-align: center;
+    font-size: small;
+}
+
+.textbox > a {
+    text-decoration: none;
+}
+
+#contact {
+    padding: 20px;
+    text-align: justify;
+    font-size: 12;
+}
+
+input {
+    margin: 10px;
+}
+
+#inquiryhr {
+    width: 70%;
+    border: 2px solid rgb(113, 62, 24);
+    padding-right: 20px;
+    margin: 0px 20px; 
+}
+
+#inquiryhr2 {
+    width: 65%;
+    padding-right: 20px;
+    margin: 5px 20px; 
+    border: 1px solid rgb(113, 62, 24)
+}
+
+
+
+
+
+
+/*== V. hyperlinks ======================================== */
+
+a:link {
+    color: rgb(247, 199, 167);
+}
+a:visited {
+    color: rgb(247, 199, 167);
+}
+a:hover {
+    color: #f39842;
+}
+a:active {
+    color: #b38f00;
+}
+
+
+
+/*== VI. footer =========================================== */
+
+.content-wrap > .textbox-footer > .footer > ol, li{
+    margin-top: 15px 0px 0px 50px;
+    list-style: none;
+}
+
+.content-wrap > .textbox-footer > .footer h1{
+    font-size: 10px;
+}
+
+.textbox-footer {
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+    color: rgb(247, 199, 167);
+    margin: 0px 0px 30px 20px;
+}
+
+

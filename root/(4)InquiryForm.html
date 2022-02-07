@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RLRE | Contact us!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel = "icon" href = "Resources/TitleBarIcon.png" type = "image/x-icon">
+</head>
+<body>
+    <div class="body-elements">
+
+        <div class="nav-block">
+            <div class="nav-wrap">
+         
+                <div class="Left-side">
+                    <div class="logo-image">
+                        <img src="Resources/TitleBarIcon.png" >  
+                    </div>  
+                    <h4> Real Living Real Estate </h4>
+                </div>
+
+                <div class="Right-side">
+                    <div class="nav-link-wrap ">
+                        <a href="(1)MainPage.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrap">
+                        <a href="(2)ProductsServices.html"> Products and Services</a>
+                    </div>
+                    <div class="nav-link-wrap active-nav">
+                        <a href="(4)InquiryForm.html"> Inquiry Form</a>
+                    </div>
+                    
+                    <pre style="margin: 0%;">|   </pre>
+            
+                    <div class="nav-link-wrap ">
+                        <a href="(3)ContactUs.html">Contact us!</a> 
+                    </div>
+                    <input type="text" placeholder="Search..."  id="searchbar">
+                    
+                </div>  
+
+            </div>
+        </div>
+        
+        <section class="main-body-contents">
+            <div class="content-wrap-banner">
+                <div class="home-page-logo">
+
+                    <img src="Resources/MainPage/RLRE banner.png" alt="">
+
+                </div>
+            </div>
+
+            <section class="inquiryHeader">
+                <img src="Resources/TitleBarIcon.png" id="inquirylogo">
+                <hr id="inquiryhr">
+                <hr id="inquiryhr2">
+                <header id="inquiryheader"> 
+                    Customer Inquiry Form 
+                </header>
+                <hr id="inquiryhr2">
+                <hr id="inquiryhr">
+
+                <fieldset id="mainfieldset">
+                <section id="parPad">
+                    <p>
+                        Thank you for you inquiry
+                    </p>
+    
+                    <p>
+                        We hope to be able to assist you in finding your new home. We ask that you provide your details 
+                        so that we can contact you, should a property suiting your requirements listed below become available.
+                    </p>
+                    <br>
+                    <form>
+                        <fieldset>
+                            <legend> Personal Data </legend>
+                                <div style="text-transform: uppercase">
+                                    <label> Name: </label>
+                                    <input type="text" id="name" size=92 maxlength=70 required> <br>
+                                    <label> Current Address: </label>
+                                    <input type="text" id="name" size=100 maxlength=100 required> <br>
+                                    <label> State: </label>
+                                    <input type="text" id="name" size=20 maxlength=20 required>
+                                    <label> zip code: </label>
+                                    <input type="text" id="name" size=10 maxlength=5 required> <br>
+                                    <label> Tel. no.: </label>
+                                    <input type="text" id="name" size=16 maxlength=8 required> 
+                                    <label> Work Tel. no.: </label>
+                                    <input type="text" id="name" size=16 maxlength=8> <br>
+                                    <label> Mobile no.: </label>
+                                    <input type="text" id="name" size=16 maxlength=8 required> 
+                                    <label> Email: </label>
+                                    <input type="email" id="name" size=50 maxlength=50 required> <br>
+                                    <label> Sex: </label>
+                                          <input type="radio" name="sex" value="Male"> Male 
+                                          <input type="radio" name="sex" value="Female"> Female
+                                    <br/>
+                                </div>
+                 
+                        </fieldset>
+                        <fieldset>
+                            <legend> Estate </legend>
+                                <fieldset>
+                                    <legend>General Data (Estate) </legend> 
+                                    <label>Type of Estate/s:</label>
+                                        <input type="checkbox" name="type" value="bungalow">Bungalow
+                                        <input type="checkbox" name="type" value="condo">Condo
+                                        <input type="checkbox" name="type" value="mansion">Mansion
+                                        <input type="checkbox" name="type" value="palace">Palace
+                                        <input type="checkbox" name="type" value="townhouse">Townhouse
+                                        <input type="checkbox" name="type" value="Unit">Unit 
+    
+                                    <br><br>
+                                    
+                                
+                                        <label> Number of occupants: </label>
+                                        <select id="occupants" name="occupants" required>
+                                            <option value='1'>1</option>
+                                            <option value='2'>2</option>
+                                            <option value='3'>3</option>
+                                            <option value='4'>4</option>
+                                            <option value='5'>5</option>
+                                            <option value='6'>6</option>
+                                            <option value='7'>7</option>
+                                            <option value='7'>7</option>
+                                            <option value='8'>8</option>
+                                            <option value='9'>9</option>
+                                            <option value='10'>10</option>
+                                        </select>
+                                  
+    
+                                    <label>Term of Lease Preferred: </label>
+                                        <input type="number" name="Lease Term" value="Lease Term" required>
+                                    <br>
+                                    <label> Estate Purpose: </label>
+                                        <select id="occupants" name="occupants"  required>
+                                            <option value='Living'>Living</option>
+                                            <option value='Business'>Business</option>
+                                            <option value='Production'>Production</option>
+                                            <option value='Stayhouse'>Stayhouse</option>
+                                            <input type="radio" name="Lease" value="Short-term"> Short-term
+                                            <input type="radio" name="Lease" value="Long-term"> Long-term
+                                    <br>
+                                </fieldset>
+                                    <br>
+                                    <fieldset>
+                                        <legend>Preferences</legend>
+                                        <label> Fencing Required </label>
+                                            <input type="radio" name="Fencing"  value="Yes"> Yes
+                                            <input type="radio" name="Fencing"  value="No"> No
+                                        <br>
+                                        <label> Car Accomodation: </label>
+                                            <input type="checkbox" name="CarAccom" value="Garage"> Garage
+                                            <input type="checkbox" name="CarAccom" value="Carport"> Carport
+                                        <br>
+                                        <label> Number of Bathrooms</label>
+                                            <input type="number" name="bathroomNum" value="bathroomNum"> 
+                                        <label> Number of Bedrooms</label>
+                                            <input type="number" name="BedroomNum" value="BedroomNum"> 
+                                        <br>
+                                        <label> Number of Car Spaces</label>
+                                            <input type="number" name="CarSpaceNum" value="CarSpaceNum"> 
+                                        <label> Date Property required by</label>
+                                            <input type="date" name="RequiredDate" min="2021-01-01" max="2022-01-01">
+                                        <br>
+                                        <label> Preferred Location (Metro Manila only)</label>
+                                            <input list="MMcities" name="mmcities" id="mmcities" autocomplete="on">
+                                                <datalist id="MMcities">
+                                                        <option value="Caloocan City"></option>
+                                                        <option value="Quezon City"></option>
+                                                        <option value="Makati City"></option>
+                                                        <option value="Malabon City"></option>
+                                                        <option value="Mandaluyong City"></option>
+                                                        <option value="Manila City"></option>
+                                                        <option value="Marikina City"></option>
+                                                        <option value="Muntinlupa City"></option>
+                                                        <option value="Navotas City"></option>
+                                                        <option value="Pasay City"></option>
+                                                        <option value="Parañaque City"></option>
+                                                        <option value="Pasig City"></option>
+                                                        <option value="Pateros Municipality"></option>
+                                                        <option value="Las Piñas City"></option>
+                                                        <option value="San Juan City"></option>
+                                                        <option value="Taguig City"></option>
+                                                </datalist>
+                                    </fieldset>
+                                    <br>
+                                    <fieldset>
+                                        <legend>Pets (if any) </legend>
+                                            <label >Number of pets: </label>
+                                                <select id="pets" name="pets">
+                                                    <option value='0'>0</option>
+                                                    <option value='1'>1</option>
+                                                    <option value='2'>2</option>
+                                                    <option value='3'>3</option>
+                                                    <option value='4'>4</option>
+                                                    <option value='5'>5</option>
+                                                    <option value='6'>6</option>
+                                                    <option value='7'>7</option>
+                                                    <option value='7'>7</option>
+                                                    <option value='8'>8</option>
+                                                    <option value='9'>9</option>
+                                                    <option value='10'>10</option>
+                                                </select>
+                                            <label>Pet Species</label>
+                                                <input type="text" id="PetSpecies" size=20 maxlength=30>  
+                                    </fieldset>
+                                <br />
+                            <fieldset>
+                                <legend> Other </legend>
+                                <label>Details of property requirements, requests and preferences:</label> 
+                            <br />
+                                  <textarea rows=10   cols=80 id="suggest">  </textarea>
+                            <br />
+
+                            </fieldset>
+                            <br />
+    
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                        <input type="reset"  value="Reset">
+                    </form>
+                </fieldset>
+            </section>                
+              
+        </section>
+
+            <div class="content-wrap-footer">
+                <div class="textbox-footer">
+
+                       <h1> Student Name: Jahnreil Amarillento</h1>
+                       <ol.a>
+                           <li>Subject: IT130-L</li>
+                           <li>Section: FOPI01</li>
+                           <li>S.N: 2021102194</li>
+                       </ol>
+
+                </div>
+            </div>
+
+     </div>
+
+</body>
+</html>
